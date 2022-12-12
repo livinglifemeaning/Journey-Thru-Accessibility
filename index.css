@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;1,500&family=Sacramento&display=swap");
+@import "./reset.css";
+
+:root {
+  --ff-primary: "Asap", sans-serif;
+  --ff-secondary: "Sacramento", cursive;
+  --c-bg: #222;
+  --c-text: #fefefe;
+  --c-card-bg: #3d3f43;
+  --c-card-box-shadow: 0 0 5px rgba(134, 134, 134, 0.8);
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  font-size: 1.2rem;
+}
+
+.body-content {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 4rem 1.125rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-family: var(--ff-secondary);
+  font-size: 3rem;
+}
+
+p {
+  margin-block: 1rem;
+}
+a {
+  color: var(--c-text);
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.website-description {
+  line-height: 1.8em;
+}
+
+.primary-navigation {
+  margin-top: 1rem;
+}
+.primary-navigation h2 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.primary-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* CARDS */
+.card {
+  position: relative;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: var(--c-card-bg);
+}
+
+.card:hover {
+  box-shadow: var(--c-card-box-shadow);
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+}
+
+.card a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card a:focus {
+  text-decoration: underline;
+}
+
+.card:focus-within {
+  box-shadow: var(--c-card-box-shadow);
+}
+
+.card:focus-within a:focus {
+  text-decoration: none;
+}
+
+.card,
+.card .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .text {
+  flex-grow: 1;
+  max-width: 60ch;
+  order: 1;
+}
+
+.card .text > * + * {
+  margin-top: 0.75rem;
+}
+
+.card .text :last-child {
+  margin-top: auto;
+}
+
+.card .text :nth-last-child(2) {
+  margin-bottom: 0.75rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.card + .card {
+  margin-top: 0;
+}
+
+.card .img {
+  height: 12rem;
+}
+
+.card .img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+@media (max-width: 400px) {
+  .cards > ul {
+    grid-gap: 4.5rem;
+  }
+}

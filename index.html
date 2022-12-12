@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Asha Cole" />
+    <meta
+      name="description"
+      content="Learning how to build different types of components in an accessible manner"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>A Journey Thru Frontend Accessibility</title>
+  </head>
+  <body>
+    <div class="body-content">
+      <header>
+        <h1>A Journey Thru Frontend Accessibility</h1>
+        <p class="website-description">
+          This website is self-practice of building accessible web components
+          under the direction of the blog
+          <a
+            href="https://inclusive-components.design/#components"
+            target="target_blank"
+            >Inclusive Components</a
+          >.
+        </p>
+        <nav class="primary-navigation" aria-label="primary-navigation">
+          <h2>The components I will practice building are:</h2>
+          <ul id="cards">
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#cards">Cards</a>
+                </h3>
+                <p>The multivarious card component, done inclusively</p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://i.pinimg.com/736x/55/3b/a4/553ba4ad0807fbdfa46499f7389a0c24.jpg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#data-tables">Data Tables</a>
+                </h3>
+                <p>Create accessible displays of data</p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1834/1834097.png"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#notifications">Notifications</a>
+                </h3>
+                <p>Alert users to information in an accessible manner</p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/006/086/198/original/notification-icon-for-web-vector.jpg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#content-slider">Content Sliders</a>
+                </h3>
+                <p>Slide through content with inclusivity in mind</p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://uxwing.com/wp-content/themes/uxwing/download/video-photography-multimedia/video-slideshow-icon.png"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#collapsible-section">Collapsible Sections</a>
+                </h3>
+                <p>Provide sections that can be closed and opened accessibly</p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/60/60781.png"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#tabbed-interfaces">Tabbed Interfaces</a>
+                </h3>
+                <p>Tab through content in an accessible manner</p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/94/94774.png"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#theme-switcher">Theme Switchers</a>
+                </h3>
+                <p>Switch those color themes inclusively!</p>
+              </div>
+              <div class="img">
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0vrB7jyb--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fcaajl7ctumz5o6p9538.png" alt="">
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3><a href="#tooltips">Tooltips & Toggletips</a></h3>
+                <p>Clarifying the use of tools to users</p>
+              </div>
+              <div class="img">
+                <img src="https://static.thenounproject.com/png/205323-200.png" alt="">
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3><a href="#menus">Menus & Menu Buttons</a></h3>
+                <p>What is a menu and how to make it accessible?</p>
+              </div>
+              <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBkWVp7VPD11VxPb046pCqxDEAFEAyL-Yl8w&usqp=CAU" alt="">
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#todo-list">Todo Lists</a>
+                </h3>
+                <p>The classic todo list example, done accessibly</p>
+              </div>
+              <div class="img">
+                <img src="https://www.clipartmax.com/png/full/422-4223379_to-do-list-vector-do-list-icon-png.png" alt="">
+              </div>
+            </li>
+            <li class="card">
+              <div class="text">
+                <h3>
+                  <a href="#toggle-buttons">Toggle Buttons</a>
+                </h3>
+                <p>Creating an accessible toggle button</p>
+              </div>
+              <div class="img">
+                <img src="https://alvarotrigo.com/blog/assets/imgs/2022-03-04/toggle-switch-with-css-only.png" alt="">
+              </div>
+            </li>
+          </ul>
+          <p>
+            This navigation was the card component practice! I learned that
+            cards should be in a list element, that links should only wrap a
+            section of the card e.g. the heading, that styles should be
+            controlled so that different text lengths and image sizes shouldn't
+            break the card, to not add too much functionality, and that headings
+            should always begin sections.
+          </p>
+        </nav>
+      </header>
+      <main></main>
+    </div>
+  </body>
+</html>
